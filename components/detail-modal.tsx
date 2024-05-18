@@ -41,7 +41,7 @@ const DetailsModal = () => {
         <div className="text-lg">
           <ul>
             {points?.map((item: any) => (
-              <div className="flex">
+              <div className="flex" key={item}>
                 <Dot />
                 <li>{item}</li>
               </div>

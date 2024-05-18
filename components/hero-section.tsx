@@ -9,16 +9,16 @@ export const HeroSection = () => {
   return (
     <div className="flex flex-col justify-between px-10 md:px-[150px] pt-[150px] md:pt-[170px] 2xl:flex-row max-2xl:items-center">
       <div className="flex flex-col max-2xl:mb-[60px]">
-        <div className="text-5xl font-bold">I'm a</div>
+        <div className="text-5xl font-bold">I&apos;m a</div>
         <br />
         <div className="mb-[50px] heroText text-[70px] md:text-[100px] font-bold leading-[1]">
           Frontend Developer
         </div>
         <div className="xl:w-[1000px] text-lg md:text-xl flex flex-col gap-4">
           <span className="">
-            &emsp; &emsp; I'm Nehal Pradhan. An aspiring frontend developer. My
-            journey began with a fascination for how user interfaces create a
-            bridge between technology and people.
+            &emsp; &emsp; I&apos;m Nehal Pradhan. An aspiring frontend
+            developer. My journey began with a fascination for how user
+            interfaces create a bridge between technology and people.
           </span>
           <span>
             &emsp; &emsp; I have honed my skills in HTML, CSS, JavaScript,

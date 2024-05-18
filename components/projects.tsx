@@ -17,7 +17,7 @@ export const Projects = () => {
         <div className="">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] justify-center">
             {reactData.map((item) => (
-              <Card cardItem={item} />
+              <Card cardItem={item} key={item.title} />
             ))}
             <Link
               href={"/projects"}
