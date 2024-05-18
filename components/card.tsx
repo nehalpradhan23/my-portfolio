@@ -31,7 +31,7 @@ export const Card = ({ cardItem }: { cardItem: dataType }) => {
       {/* info ========================== */}
       <div className="absolute flex flex-col bottom-0 justify-between w-full backdrop-blur-2xl bg-white/60 dark:bg-white/10 px-2 py-3 border ">
         <div className="flex flex-col gap-1">
-          <span className="text-4xl">{title}</span>
+          <span className="text-4xl text-gray-200 font-semibold">{title}</span>
           <span className="line-clamp-1 text-lg dark:text-white/80">
             {description}
           </span>

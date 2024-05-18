@@ -53,7 +53,7 @@ export const HeroSection = () => {
           <HeroSectionPersonalDetails />
           <Link
             href={"/"}
-            className="flex gap-2 mt-5 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-md items-center cursor-pointer px-5 py-1 hover:scale-105 text-white"
+            className="flex gap-2 mt-4 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-md items-center cursor-pointer px-5 py-2 hover:scale-105 text-white"
           >
             <MenuSquare />
             <span className="text-xl">Resume</span>

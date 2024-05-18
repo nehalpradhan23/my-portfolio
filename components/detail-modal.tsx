@@ -23,7 +23,7 @@ const DetailsModal = () => {
         <DialogHeader>
           <DialogTitle className="text-5xl">{title}</DialogTitle>
         </DialogHeader>
-        <h1>{description}</h1>
+        <span className="text-lg">{description}</span>
         <div className="flex gap-3">
           {stack?.map((item: any) => (
             <div key={item}>
@@ -37,7 +37,8 @@ const DetailsModal = () => {
             </div>
           ))}
         </div>
-        <div className="">
+        {/* points ======================== */}
+        <div className="text-lg">
           <ul>
             {points?.map((item: any) => (
               <div className="flex">
