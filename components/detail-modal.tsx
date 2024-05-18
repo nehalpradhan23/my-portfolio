@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { UserContext } from "./context/user-context";
 import Image from "next/image";
-import { Dot, SquareArrowUpRight } from "lucide-react";
+import { Dot, Key, SquareArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 const DetailsModal = () => {
@@ -11,7 +11,7 @@ const DetailsModal = () => {
 
   const onClose = () => {
     setIsOpen(false);
-    setData("");
+    // setData(defaultData);
   };
   if (data === null) return;
   const { title, description, githubLink, liveProjectLink, stack, points } =
@@ -26,13 +26,15 @@ const DetailsModal = () => {
         <h1>{description}</h1>
         <div className="flex gap-3">
           {stack?.map((item: any) => (
-            <Image
-              src={`/skills/${item}.png`}
-              alt="icons"
-              width={40}
-              height={40}
-              className="object-contain h-8 w-8 md:h-10 md:w-10"
-            />
+            <div key={item}>
+              <Image
+                src={`/skills/${item}.png`}
+                alt="icons"
+                width={40}
+                height={40}
+                className="object-contain h-8 w-8 md:h-10 md:w-10"
+              />
+            </div>
           ))}
         </div>
         <div className="">
@@ -49,14 +51,17 @@ const DetailsModal = () => {
         {/* links =========================================== */}
         <div className="flex justify-end gap-4">
           <Link
-            href={"/www.google.com"}
+            href={githubLink}
+            target="_blank"
             className="flex justify-center items-center border p-2 cursor-pointer border-black dark:border-white gap-2 rounded-md hover:scale-110 hover:bg-gray-200 dark:hover:bg-slate-950 transition-all"
           >
             <Image src={"/github.png"} alt="github" height={30} width={30} />
             <span>Github link</span>
           </Link>
+          {/* app link ================== */}
           <Link
-            href={"/www.google.com"}
+            href={liveProjectLink}
+            target="_blank"
             className="flex justify-center items-center border p-2 cursor-pointer border-black dark:border-white gap-2 rounded-md hover:scale-110 hover:bg-gray-200 dark:hover:bg-slate-950 transition-all"
           >
             <SquareArrowUpRight />

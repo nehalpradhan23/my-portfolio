@@ -7,10 +7,11 @@ import { useContext } from "react";
 import { UserContext } from "./context/user-context";
 
 export const Card = ({ cardItem }: { cardItem: dataType }) => {
-  const { setIsOpen, setData } = useContext(UserContext);
+  const { setIsOpen, setData, data } = useContext(UserContext);
   const handleOpen = () => {
     setIsOpen(true);
     setData(cardItem);
+    // console.log(cardItem);
   };
   const { title, description, githubLink, imageSrc, liveProjectLink, stack } =
     cardItem;

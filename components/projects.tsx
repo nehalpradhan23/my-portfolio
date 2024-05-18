@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Card } from "./card";
-import { data } from "@/data/data";
+import { reactData } from "@/data/react";
 
 export const Projects = () => {
   return (
@@ -16,7 +16,7 @@ export const Projects = () => {
         {/* cards ====================== */}
         <div className="">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] justify-center">
-            {data.map((item) => (
+            {reactData.map((item) => (
               <Card cardItem={item} />
             ))}
             <Link
