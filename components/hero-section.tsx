@@ -7,14 +7,15 @@ import HeroSectionPersonalDetails from "./hero-section-personal-details";
 
 export const HeroSection = () => {
   return (
-    <div className="flex flex-col justify-between px-10 md:px-[150px] pt-[150px] md:pt-[170px] 2xl:flex-row max-2xl:items-center">
-      <div className="flex flex-col max-2xl:mb-[60px]">
+    // <div className="flex flex-col justify-between px-10 md:px-[150px] pt-[100px] md:pt-[170px] 2xl:flex-row max-2xl:items-center">
+    <div className="flex flex-col justify-between mt-[5rem]  2xl:flex-row max-2xl:items-center max-w-[1800px] mx-auto w-full px-5 md:px-[5vw]">
+      <div className="flex flex-col max-2xl:mb-[60px] md:w-[60vw]">
         <div className="text-5xl font-bold">I&apos;m a</div>
         <br />
         <div className="mb-[50px] heroText text-[70px] md:text-[100px] font-bold leading-[1]">
           Frontend Developer
         </div>
-        <div className="xl:w-[1000px] text-lg md:text-xl flex flex-col gap-4">
+        <div className="xl:w-fit text-md md:text-xl flex flex-col gap-4">
           <span className="">
             &emsp; &emsp; I&apos;m Nehal Pradhan. An aspiring frontend
             developer. My journey began with a fascination for how user
@@ -37,14 +38,16 @@ export const HeroSection = () => {
       </div>
       {/* image, links and info section ====================== */}
       {/* <div className="flex flex-col items-center justify-center md:mr-28 md:mt-12 rounded-full h-[400px] w-[400px]"> */}
-      <div className="flex flex-col md:mr-28 2xl:-mt-14">
+      {/* <div className="flex flex-col md:mr-28 2xl:-mt-14"> */}
+      <div className="flex flex-col 2xl:-mt-10 mx-auto max-sm:items-center max-sm:justify-center">
         <div className="rounded-full">
           <Image
             src={"/myImage.JPG"}
             alt="myImage"
             height={500}
             width={500}
-            className="rounded-full object-cover h-[400px] w-[400px] max-sm:h-[300px] max-sm:w-[300px]"
+            className="rounded-full object-cover h-[20em] w-[20em] max-sm:h-[200px] max-sm:w-[200px]"
+            // className="rounded-full object-cover h-[400px] w-[400px] max-sm:h-[300px] max-sm:w-[300px]"
           />
         </div>
         {/* links ====================== */}
