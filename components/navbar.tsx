@@ -37,8 +37,9 @@ export const Navbar = () => {
         </Hint>
 
         {/* links and theme toggle ==================== */}
+        {/* links ======== */}
         <div className="flex items-center gap-3">
-          {/* links ======== */}
+          {/* 
           <div className="flex gap-2 items-center">
             <Link href={"/"}>
               <span>Resume</span>
@@ -57,7 +58,7 @@ export const Navbar = () => {
                 height={30}
               />
             </Link>
-          </div>
+          </div> */}
 
           {/* theme toggle ================== */}
           <Hint label="Change theme">

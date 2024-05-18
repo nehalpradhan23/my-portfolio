@@ -21,7 +21,7 @@ export const Projects = () => {
             ))}
             <Link
               href={"/projects"}
-              className="hover:scale-110 text-3xl flex items-center justify-center cursor-pointer  transition-all hover:bg-gradient-to-r hover:from-indigo-400 hover:to-purple-600 hover:text-transparent hover:bg-clip-text group"
+              className="hover:scale-110 text-3xl font-bold flex items-center justify-center cursor-pointer  transition-all hover:bg-gradient-to-r hover:from-indigo-400 hover:to-purple-600 hover:text-transparent hover:bg-clip-text group"
             >
               View all projects -{">"}
             </Link>
@@ -35,7 +35,7 @@ export const Projects = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] justify-center">
             <Link
               href={"/"}
-              className="hover:scale-110 text-3xl flex items-center justify-center cursor-pointer  transition-all hover:bg-gradient-to-r hover:from-indigo-400 hover:to-purple-600 hover:text-transparent hover:bg-clip-text group"
+              className="hover:scale-110 text-3xl font-bold flex items-center justify-center cursor-pointer  transition-all hover:bg-gradient-to-r hover:from-indigo-400 hover:to-purple-600 hover:text-transparent hover:bg-clip-text group"
             >
               View all projects -{">"}
             </Link>
