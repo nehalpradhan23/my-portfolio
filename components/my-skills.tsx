@@ -37,14 +37,14 @@ const skills = [
 
 const otherSkills = [
   "MongoDb",
-  "Next Auth",
+  "Node",
+  "Redux toolkit",
   "Clerk Auth",
+  "Git",
+  "SASS",
   "Convex",
   "Firebase",
-  "Git",
-  "Redux toolkit",
-  "Node",
-  "SASS",
+  "Next Auth",
   "Prisma",
   "zustand",
   "zod",
@@ -52,12 +52,12 @@ const otherSkills = [
 
 export const MySkills = () => {
   return (
-    <div className="px-10 pt-[100px] md:pt-[150px] flex flex-wrap items-center justify-center gap-3">
+    <div className="px-3 md:px-10 pt-[100px] md:pt-[150px] flex flex-wrap items-center justify-center gap-3">
       <span className="text-xl font-bold">My skills: </span>
       {skills.map((item) => (
         <div
           key={item.title}
-          className="pointer-events-none flex items-center border bg-gray-300 dark:bg-blue-950 rounded-full shadow-md dark:shadow-white/10"
+          className="pointer-events-none flex items-center border bg-gray-300 dark:bg-blue-950 rounded-md shadow-md dark:shadow-white/10"
         >
           <div className="flex items-center gap-2 px-3 py-2">
             <span>
@@ -66,11 +66,13 @@ export const MySkills = () => {
                 alt={item.title}
                 width={500}
                 height={500}
-                className="h-9 w-9 object-contain"
+                className="h-6 w-6 md:h-8 md:w-8 object-contain"
               />
             </span>
 
-            <span className="dark:text-white font-bold">{item.title}</span>
+            <span className="dark:text-white max-md:text-base md:font-bold">
+              {item.title}
+            </span>
           </div>
         </div>
       ))}

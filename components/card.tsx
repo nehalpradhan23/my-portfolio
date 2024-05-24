@@ -13,8 +13,7 @@ export const Card = ({ cardItem }: { cardItem: dataType }) => {
     setData(cardItem);
     // console.log(cardItem);
   };
-  const { title, description, githubLink, imageSrc, liveProjectLink, stack } =
-    cardItem;
+  const { title, description, imageSrc, stack } = cardItem;
   // ==================================================================
   return (
     // bg-gray-300 dark:bg-gray-50/10
@@ -28,19 +27,30 @@ export const Card = ({ cardItem }: { cardItem: dataType }) => {
           className="object-cover"
         />
       </div>
+
       {/* info ========================== */}
-      <div className="absolute flex flex-col bottom-0 justify-between w-full backdrop-blur-2xl bg-white/60 dark:bg-white/10 px-2 py-3 border ">
+      <div className="absolute flex flex-col bottom-0 justify-between w-full backdrop-blur-2xl bg-white/60 dark:bg-white/10 px-2 py-3">
         <div className="flex flex-col gap-1">
-          <span className="text-4xl dark:text-gray-200 font-semibold max-md:text-2xl">
+          <span className="text-4xl dark:text-gray-200 font-semibold max-md:text-2xl line-clamp-1">
             {title}
           </span>
           <span className="line-clamp-1 text-lg dark:text-white/80">
             {description}
           </span>
+          <div className="flex gap-2">
+            {stack.map((item) => (
+              <Image
+                src={`/skills/${item}.png`}
+                alt="img"
+                width={22}
+                height={22}
+              />
+            ))}
+          </div>
         </div>
       </div>
       {/* details link ================================== */}
-      <div className="flex justify-end gap-2 absolute right-3 top-3 bg-gray-200 dark:bg-slate-950 rounded-md hover:scale-105 hover:bg-gray-300 dark:hover:bg-slate-900 border border-white/80">
+      <div className="flex justify-end gap-2 absolute right-3 top-3 bg-gray-200 dark:bg-slate-700 rounded-md hover:scale-105 hover:bg-gray-300 dark:hover:bg-slate-900 border border-white/80">
         <div
           className="flex items-center gap-2 cursor-pointer  px-3 py-2 rounded-full transition-all"
           onClick={handleOpen}

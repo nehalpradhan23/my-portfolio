@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Card } from "./card";
-import { reactData } from "@/data/react";
+import { projectsListData } from "@/data/projectListData";
 
 export const Projects = () => {
   return (
@@ -10,36 +10,17 @@ export const Projects = () => {
       </span>
 
       <div className="flex flex-col mx-auto">
-        <span className="text-4xl md:text-5xl font-semibold mb-[50px]">
-          React js
-        </span>
         {/* cards ====================== */}
-        <div className="">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] justify-center">
-            {reactData.map((item) => (
-              <Card cardItem={item} key={item.title} />
-            ))}
-            <Link
-              href={"/projects"}
-              className="hover:scale-110 text-3xl font-bold flex items-center justify-center cursor-pointer  transition-all hover:bg-gradient-to-r hover:from-indigo-400 hover:to-purple-600 hover:text-transparent hover:bg-clip-text group"
-            >
-              View all projects -{">"}
-            </Link>
-          </div>
-        </div>
-        <span className="text-4xl md:text-5xl font-semibold mt-[50px] mb-[50px]">
-          next js
-        </span>
-        {/* cards ====================== */}
-        <div className="flex justify-center items-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] justify-center">
-            <Link
-              href={"/"}
-              className="hover:scale-110 text-3xl font-bold flex items-center justify-center cursor-pointer  transition-all hover:bg-gradient-to-r hover:from-indigo-400 hover:to-purple-600 hover:text-transparent hover:bg-clip-text group"
-            >
-              View all projects -{">"}
-            </Link>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] justify-center">
+          {projectsListData.map((item) => (
+            <Card cardItem={item} key={item.title} />
+          ))}
+          <Link
+            href={"/projects"}
+            className="hover:scale-110 text-3xl font-bold flex items-center justify-center cursor-pointer  transition-all hover:bg-gradient-to-r hover:from-indigo-400 hover:to-purple-600 hover:text-transparent hover:bg-clip-text group w-[350px] 2xl:w-[450px] h-[150px] 2xl:h-[300px]"
+          >
+            View all projects -{">"}
+          </Link>
         </div>
       </div>
     </div>

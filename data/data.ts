@@ -5,6 +5,7 @@ export type dataType = {
   githubLink: string;
   liveProjectLink: string;
   stack: string[];
+  otherStack?: string[];
   points: string[];
 };
 
@@ -17,5 +18,6 @@ export const defaultData: dataType[] = [
     liveProjectLink: "",
     points: [],
     stack: [],
+    otherStack: [],
   },
 ];

@@ -3,8 +3,9 @@ import React, { useContext } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { UserContext } from "./context/user-context";
 import Image from "next/image";
-import { Dot, Key, SquareArrowUpRight } from "lucide-react";
+import { ArrowRight, Dot, SquareArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { Hint } from "./hint";
 
 const DetailsModal = () => {
   const { isOpen, setIsOpen, data, setData } = useContext(UserContext);
@@ -14,35 +15,54 @@ const DetailsModal = () => {
     // setData(defaultData);
   };
   if (data === null) return;
-  const { title, description, githubLink, liveProjectLink, stack, points } =
-    data;
+  const {
+    title,
+    description,
+    githubLink,
+    liveProjectLink,
+    stack,
+    otherStack,
+    points,
+  } = data;
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle className="text-5xl">{title}</DialogTitle>
+          <DialogTitle className="text-2xl md:text-5xl">{title}</DialogTitle>
         </DialogHeader>
-        <span className="text-lg">{description}</span>
+        <span className="text-base md:text-lg">{description}</span>
         <div className="flex gap-3">
           {stack?.map((item: any) => (
-            <div key={item}>
-              <Image
-                src={`/skills/${item}.png`}
-                alt="icons"
-                width={40}
-                height={40}
-                className="object-contain h-8 w-8 md:h-10 md:w-10"
-              />
-            </div>
+            <Hint label={item}>
+              <div key={item}>
+                <Image
+                  src={`/skills/${item}.png`}
+                  alt="icons"
+                  width={40}
+                  height={40}
+                  className="object-contain h-8 w-8 md:h-10 md:w-10"
+                />
+              </div>
+            </Hint>
           ))}
         </div>
-        {/* points ======================== */}
-        <div className="text-lg">
-          <ul>
-            {points?.map((item: any) => (
+        {/* other stack ================== */}
+        <ul className="flex flex-wrap">
+          {otherStack &&
+            otherStack.map((item) => (
               <div className="flex" key={item}>
                 <Dot />
+                <li>{item}</li>
+              </div>
+            ))}
+        </ul>
+        {/* points ======================== */}
+        <div className="text-base md:text-lg">
+          <ul>
+            {points?.map((item) => (
+              <div className="flex items-center gap-2" key={item}>
+                <ArrowRight className="h-4 w-4" />
                 <li>{item}</li>
               </div>
             ))}

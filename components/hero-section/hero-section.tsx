@@ -1,21 +1,18 @@
 import Image from "next/image";
 import React from "react";
-import Link from "next/link";
-import { MapPin, MenuSquare } from "lucide-react";
-import { Hint } from "./hint";
 import HeroSectionPersonalDetails from "./hero-section-personal-details";
+import HeroSectionLinks from "./hero-section-links";
 
 export const HeroSection = () => {
   return (
-    // <div className="flex flex-col justify-between px-10 md:px-[150px] pt-[100px] md:pt-[170px] 2xl:flex-row max-2xl:items-center">
-    <div className="flex flex-col justify-between mt-[5rem]  2xl:flex-row max-2xl:items-center max-w-[1800px] mx-auto w-full px-5 md:px-[5vw]">
+    <div className="flex flex-col justify-between mt-[5rem] 2xl:flex-row max-2xl:items-center max-w-[1500px] mx-auto w-full px-5 md:px-[5vw]">
       <div className="flex flex-col max-2xl:mb-[60px] md:w-[60vw]">
-        <div className="text-5xl font-bold">I&apos;m a</div>
+        <div className="text-4xl font-bold">I&apos;m a</div>
         <br />
-        <div className="mb-[50px] heroText text-[70px] md:text-[100px] font-bold leading-[1]">
+        <div className="mb-[30px] md:mb-[40px] heroText text-[60px] md:text-[80px] font-bold leading-[1]">
           Frontend Developer
         </div>
-        <div className="xl:w-fit text-md md:text-xl flex flex-col gap-4">
+        <div className="xl:w-fit text-md md:text-lg flex flex-col gap-4">
           <span className="">
             &emsp; &emsp; I&apos;m Nehal Pradhan. An aspiring frontend
             developer. My journey began with a fascination for how user
@@ -35,32 +32,23 @@ export const HeroSection = () => {
             industry. Let’s build something great together!
           </span>
         </div>
+        <HeroSectionLinks />
       </div>
       {/* image, links and info section ====================== */}
-      {/* <div className="flex flex-col items-center justify-center md:mr-28 md:mt-12 rounded-full h-[400px] w-[400px]"> */}
-      {/* <div className="flex flex-col md:mr-28 2xl:-mt-14"> */}
-      <div className="flex flex-col 2xl:-mt-10 mx-auto max-sm:items-center max-sm:justify-center">
+      <div className="flex flex-col 2xl:-mt-10 max-sm:items-center max-sm:justify-center">
         <div className="rounded-full">
           <Image
             src={"/myImage.JPG"}
             alt="myImage"
             height={500}
             width={500}
-            className="rounded-full object-cover h-[20em] w-[20em] max-sm:h-[200px] max-sm:w-[200px]"
-            // className="rounded-full object-cover h-[400px] w-[400px] max-sm:h-[300px] max-sm:w-[300px]"
+            className="rounded-full object-cover h-[16em] w-[16em] max-sm:h-[200px] max-sm:w-[200px]"
           />
         </div>
         {/* links ====================== */}
         <div className="flex flex-col gap-3 items-center mt-6">
           <span className="text-3xl">Nehal pradhan</span>
           <HeroSectionPersonalDetails />
-          <Link
-            href={"/"}
-            className="flex gap-2 mt-4 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-md items-center cursor-pointer px-5 py-2 hover:scale-105 text-white"
-          >
-            <MenuSquare />
-            <span className="text-xl">Resume</span>
-          </Link>
         </div>
       </div>
     </div>
