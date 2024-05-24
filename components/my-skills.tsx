@@ -41,7 +41,6 @@ const otherSkills = [
   "Node",
   "Redux toolkit",
   "Clerk Auth",
-  "Git",
   "SASS",
   "Convex",
   "Firebase",
