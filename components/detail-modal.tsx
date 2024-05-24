@@ -33,8 +33,8 @@ const DetailsModal = () => {
         </DialogHeader>
         <span className="text-base md:text-lg">{description}</span>
         <div className="flex gap-3">
-          {stack?.map((item: any) => (
-            <Hint label={item}>
+          {stack?.map((item) => (
+            <Hint label={item} key={item}>
               <div key={item}>
                 <Image
                   src={`/skills/${item}.png`}

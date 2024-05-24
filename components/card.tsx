@@ -40,6 +40,7 @@ export const Card = ({ cardItem }: { cardItem: dataType }) => {
           <div className="flex gap-2">
             {stack.map((item) => (
               <Image
+                key={item}
                 src={`/skills/${item}.png`}
                 alt="img"
                 width={22}

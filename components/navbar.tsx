@@ -15,7 +15,7 @@ export const Navbar = () => {
   useEffect(() => {
     setTheme("dark");
     setCurrentTheme("dark");
-  }, []);
+  }, [setTheme]);
 
   const changeTheme = () => {
     if (currentTheme === "dark") {
