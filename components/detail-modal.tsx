@@ -29,7 +29,9 @@ const DetailsModal = () => {
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle className="text-2xl md:text-5xl">{title}</DialogTitle>
+          <DialogTitle className="text-2xl md:text-5xl pt-5">
+            {title}
+          </DialogTitle>
         </DialogHeader>
         <span className="text-base md:text-lg">{description}</span>
         <div className="flex gap-3">

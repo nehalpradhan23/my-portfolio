@@ -44,7 +44,8 @@ export const projectsListData: dataType[] = [
   },
   {
     title: "MyEstate Real Estate Marketplace",
-    description: "A real estate marketplace",
+    description:
+      "A real estate marketplace to explore and list a real estate property",
     imageSrc: "/images/react/my-estate.png",
     githubLink: "https://github.com/nehalpradhan23/mern-real-estate-market",
     liveProjectLink: "https://myestate-real-estate-market.onrender.com/",

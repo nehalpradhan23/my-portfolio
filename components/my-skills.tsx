@@ -1,3 +1,4 @@
+import { Dot } from "lucide-react";
 import Image from "next/image";
 
 const skills = [
@@ -10,7 +11,7 @@ const skills = [
     title: "CSS",
   },
   {
-    icon: "/skills/js.png",
+    icon: "/skills/javascript.png",
     title: "JavaScript",
   },
   {
@@ -52,30 +53,41 @@ const otherSkills = [
 
 export const MySkills = () => {
   return (
-    <div className="px-3 md:px-10 pt-[100px] md:pt-[150px] flex flex-wrap items-center justify-center gap-3">
-      <span className="text-xl font-bold">My skills: </span>
-      {skills.map((item) => (
-        <div
-          key={item.title}
-          className="pointer-events-none flex items-center border bg-gray-300 dark:bg-blue-950 rounded-md shadow-md dark:shadow-white/10"
-        >
-          <div className="flex items-center gap-2 px-3 py-2">
-            <span>
-              <Image
-                src={item.icon}
-                alt={item.title}
-                width={500}
-                height={500}
-                className="h-6 w-6 md:h-8 md:w-8 object-contain"
-              />
-            </span>
+    <>
+      <div className="px-3 md:px-10 pt-[100px] md:pt-[150px] flex flex-wrap items-center justify-center gap-3">
+        <span className="text-xl font-bold">My skills: </span>
+        {skills.map((item) => (
+          <div
+            key={item.title}
+            className="pointer-events-none flex items-center border bg-gray-300 dark:bg-blue-950 rounded-md shadow-md dark:shadow-white/10"
+          >
+            <div className="flex items-center gap-2 px-3 py-2">
+              <span>
+                <Image
+                  src={item.icon}
+                  alt={item.title}
+                  width={500}
+                  height={500}
+                  className="h-6 w-6 md:h-8 md:w-8 object-contain"
+                />
+              </span>
 
-            <span className="dark:text-white max-md:text-base md:font-bold">
-              {item.title}
-            </span>
+              <span className="dark:text-white max-md:text-base md:font-bold">
+                {item.title}
+              </span>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+
+      <ul className="flex font-bold gap-2 px-3 md:px-10 pt-[50px] flex-wrap items-center justify-center">
+        {otherSkills.map((item) => (
+          <li className="flex">
+            <Dot />
+            {item}
+          </li>
+        ))}
+      </ul>
+    </>
   );
 };
