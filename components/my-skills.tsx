@@ -82,7 +82,7 @@ export const MySkills = () => {
 
       <ul className="flex font-bold gap-2 px-3 md:px-10 pt-[50px] flex-wrap items-center justify-center">
         {otherSkills.map((item) => (
-          <li className="flex">
+          <li className="flex" key={item}>
             <Dot />
             {item}
           </li>
