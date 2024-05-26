@@ -4,7 +4,7 @@ import { projectsListData } from "@/data/projectListData";
 
 export const Projects = () => {
   return (
-    <div className="pt-[150px] pb-[20px] flex flex-col max-w-[1500px] mx-auto">
+    <div className="pt-[100px] pb-[20px] flex flex-col max-w-[1500px] mx-auto">
       <span className="text-center mb-[50px] text-5xl md:text-6xl font-semibold">
         MY PROJECTS
       </span>

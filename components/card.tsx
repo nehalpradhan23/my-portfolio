@@ -29,7 +29,7 @@ export const Card = ({ cardItem }: { cardItem: dataType }) => {
       </div>
 
       {/* info ========================== */}
-      <div className="absolute flex flex-col bottom-0 justify-between w-full backdrop-blur-xl bg-white/50 dark:bg-white/10 px-2 py-2 md:py-3">
+      <div className="absolute flex flex-col bottom-0 justify-between w-full backdrop-blur-xl bg-white/50 dark:bg-black/30 px-2 py-2 md:py-3">
         <div className="flex flex-col gap-1">
           <span className="text-4xl dark:text-gray-200 font-semibold max-md:text-2xl line-clamp-1">
             {title}

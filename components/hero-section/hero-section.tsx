@@ -20,8 +20,8 @@ export const HeroSection = () => {
           </span>
           <span>
             &emsp; &emsp; I have honed my skills in HTML, CSS, JavaScript,
-            ReactJs, nextjs, etc, and I am continually exploring new frameworks
-            and technologies to expand my toolkit.
+            ReactJs, nextjs, etc, and I am continually exploring new
+            technologies to expand my toolkit.
           </span>
           <span>
             &emsp;&emsp; My approach is centered around creating intuitive and

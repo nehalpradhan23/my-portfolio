@@ -23,12 +23,12 @@ const skills = [
     title: "Next js",
   },
   {
-    icon: "/skills/typescript.png",
-    title: "Typescript",
-  },
-  {
     icon: "/skills/tailwind.png",
     title: "Tailwind",
+  },
+  {
+    icon: "/skills/typescript.png",
+    title: "Typescript",
   },
   {
     icon: "/skills/shadcn.png",
@@ -38,7 +38,9 @@ const skills = [
 
 const otherSkills = [
   "MongoDb",
+  "Express",
   "Node",
+  "UI",
   "Redux toolkit",
   "Clerk Auth",
   "SASS",

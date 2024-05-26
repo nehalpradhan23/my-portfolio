@@ -58,7 +58,22 @@ export const projectsListData: dataType[] = [
       "React redux for state management",
       "Tailwind CSS for styling",
     ],
-    stack: ["html", "tailwind", "css", "javascript", "react"],
+    stack: ["html", "css", "tailwind", "javascript", "react"],
     otherStack: ["mongoose", "express", "firebase", "redux"],
+  },
+  {
+    title: "Netflix clone",
+    description: "A netflix like app to explore all its contents",
+    imageSrc: "/images/nextjs/netflix-clone.png",
+    githubLink: "https://github.com/nehalpradhan23/netflix-clone-nextjs",
+    liveProjectLink: "https://netflix-clone-nextjs-nu.vercel.app/",
+    points: [
+      "Next-auth for authentication",
+      "Reusable components for multiple cases",
+      "Multiple accounts handling in one",
+      "Tailwind CSS for styling",
+    ],
+    stack: ["html", "css", "tailwind", "javascript", "next"],
+    otherStack: ["mongoose", "next-auth", "material UI"],
   },
 ];
