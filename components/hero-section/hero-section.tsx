@@ -35,7 +35,7 @@ export const HeroSection = () => {
         <HeroSectionLinks />
       </div>
       {/* image, links and info section ====================== */}
-      <div className="flex flex-col 2xl:-mt-10 max-sm:items-center max-sm:justify-center">
+      <div className="flex flex-col 2xl:-mt-10 max-sm:items-center max-sm:justify-center p-4 items-center border shadow-sm shadow-white rounded-2xl">
         <div className="rounded-full">
           <Image
             src={"/myImage.JPG"}

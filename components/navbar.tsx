@@ -5,6 +5,7 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Hint } from "./hint";
+import Link from "next/link";
 
 export const Navbar = () => {
   const [currentTheme, setCurrentTheme] = useState("dark");
@@ -29,9 +30,12 @@ export const Navbar = () => {
     <nav className="fixed w-full z-20 backdrop-blur-3xl">
       <div className=" flex flex-wrap items-center justify-between mx-auto py-4 px-8">
         <Hint label="Home">
-          <span className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-indigo-400 to-purple-600 text-transparent bg-clip-text hover:cursor-pointer">
+          <Link
+            href={"/"}
+            className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-indigo-400 to-purple-600 text-transparent bg-clip-text hover:cursor-pointer"
+          >
             My Portfolio
-          </span>
+          </Link>
         </Hint>
 
         {/* links and theme toggle ==================== */}

@@ -82,14 +82,16 @@ const DetailsModal = () => {
             <span>Github link</span>
           </Link>
           {/* app link ================== */}
-          <Link
-            href={liveProjectLink}
-            target="_blank"
-            className="flex justify-center items-center border p-2 cursor-pointer border-black dark:border-white gap-2 rounded-md hover:scale-110 hover:bg-gray-200 dark:hover:bg-slate-950 transition-all"
-          >
-            <SquareArrowUpRight />
-            <span>Open App</span>
-          </Link>
+          {liveProjectLink && (
+            <Link
+              href={liveProjectLink}
+              target="_blank"
+              className="flex justify-center items-center border p-2 cursor-pointer border-black dark:border-white gap-2 rounded-md hover:scale-110 hover:bg-gray-200 dark:hover:bg-slate-950 transition-all"
+            >
+              <SquareArrowUpRight />
+              <span>Open App</span>
+            </Link>
+          )}
         </div>
       </DialogContent>
     </Dialog>

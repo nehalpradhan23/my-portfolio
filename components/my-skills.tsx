@@ -40,14 +40,11 @@ const otherSkills = [
   "MongoDb",
   "Express",
   "Node",
-  "UI",
   "Redux toolkit",
   "Clerk Auth",
   "SASS",
-  "Convex",
   "Firebase",
   "Next Auth",
-  "Prisma",
   "zustand",
   "zod",
 ];
@@ -55,7 +52,7 @@ const otherSkills = [
 export const MySkills = () => {
   return (
     <>
-      <div className="px-3 md:px-10 pt-[100px] md:pt-[150px] flex flex-wrap items-center justify-center gap-3">
+      <div className="px-3 md:px-10 pt-[100px] md:pt-[150px] flex flex-wrap items-center justify-center gap-3 mt-[50px]">
         <span className="text-xl font-bold">My skills: </span>
         {skills.map((item) => (
           <div
