@@ -21,7 +21,7 @@ const HeroSectionLinks = () => {
         <span className="">Github</span>
       </Link>
       <Link
-        href={"https://github.com/nehalpradhan23"}
+        href={"https://www.linkedin.com/in/nehalpradhan22"}
         target="_blank"
         className="flex gap-2 items-center px-5 py-2 bg-blue-800 text-white rounded-md hover:scale-105"
       >

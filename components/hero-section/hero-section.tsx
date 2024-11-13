@@ -5,7 +5,7 @@ import HeroSectionLinks from "./hero-section-links";
 
 export const HeroSection = () => {
   return (
-    <div className="flex flex-col justify-between mt-[5rem] 2xl:flex-row max-2xl:items-center max-w-[1500px] mx-auto w-full px-5 md:px-[5vw]">
+    <div className="flex flex-col gap-5 justify-between mt-[5rem] 2xl:flex-row max-2xl:items-center max-w-[1500px] mx-auto w-full px-5 md:px-[5vw]">
       <div className="flex flex-col max-2xl:mb-[60px] md:w-[60vw]">
         <div className="text-4xl font-bold">I&apos;m a</div>
         <br />
@@ -35,14 +35,14 @@ export const HeroSection = () => {
         <HeroSectionLinks />
       </div>
       {/* image, links and info section ====================== */}
-      <div className="flex flex-col 2xl:-mt-10 max-sm:items-center max-sm:justify-center p-4 items-center border shadow-sm shadow-white rounded-2xl">
+      <div className="flex flex-col max-md:flex-col max-2xl:flex-row max-2xl:gap-10 2xl:-mt-10 max-sm:items-center max-sm:justify-center p-4 items-center border shadow-sm shadow-white rounded-2xl bg-gray-200 border-slate-600 dark:bg-transparent">
         <div className="rounded-full">
           <Image
             src={"/myImage.JPG"}
             alt="myImage"
-            height={500}
-            width={500}
-            className="rounded-full object-cover h-[16em] w-[16em] max-sm:h-[200px] max-sm:w-[200px]"
+            height={400}
+            width={400}
+            className="rounded-full object-cover h-[14em] w-[14em] max-sm:h-[200px] max-sm:w-[200px]"
           />
         </div>
         {/* links ====================== */}

@@ -1,17 +1,17 @@
 "use client";
 
 import { dataType } from "@/data/data";
-import { ListCollapse } from "lucide-react";
+import { ListCollapse, SquareArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import { useContext } from "react";
 import { UserContext } from "./context/user-context";
+import Link from "next/link";
 
 export const Card = ({ cardItem }: { cardItem: dataType }) => {
   const { setIsOpen, setData, data } = useContext(UserContext);
   const handleOpen = () => {
     setIsOpen(true);
     setData(cardItem);
-    // console.log(cardItem);
   };
   const { title, description, imageSrc, stack } = cardItem;
   // ==================================================================
@@ -37,16 +37,46 @@ export const Card = ({ cardItem }: { cardItem: dataType }) => {
           <span className="line-clamp-1 text-lg dark:text-white/80 pointer-events-none">
             {description}
           </span>
-          <div className="flex gap-2">
-            {stack.map((item) => (
-              <Image
-                key={item}
-                src={`/skills/${item}.png`}
-                alt="img"
-                width={22}
-                height={22}
-              />
-            ))}
+          <div className="flex gap-2 justify-between">
+            <div className="flex gap-2">
+              {stack.map((item) => (
+                <Image
+                  key={item}
+                  src={`/skills/${item}.png`}
+                  alt="img"
+                  width={22}
+                  height={22}
+                  className="object-contain"
+                />
+              ))}
+            </div>
+            {/* direct links */}
+            <div className="flex justify-end gap-4 mr-2">
+              <Link
+                href={cardItem.githubLink}
+                target="_blank"
+                className="flex items-center cursor-pointer  rounded-full hover:scale-110 transition-all"
+              >
+                <Image
+                  src={"/github.png"}
+                  alt="github"
+                  height={25}
+                  width={25}
+                />
+                {/* <span>Github link</span> */}
+              </Link>
+              {/* app link ================== */}
+              {cardItem.liveProjectLink && (
+                <Link
+                  href={cardItem.liveProjectLink}
+                  target="_blank"
+                  className="flex items-center cursor-pointer  rounded-full hover:scale-110 transition-all"
+                >
+                  <SquareArrowUpRight />
+                  {/* <span>Open App</span> */}
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </div>

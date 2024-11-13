@@ -34,6 +34,10 @@ const skills = [
     icon: "/skills/shadcn.png",
     title: "Shadcn UI",
   },
+  {
+    icon: "/skills/react-native.png",
+    title: "React Native",
+  },
 ];
 
 const otherSkills = [
@@ -41,9 +45,7 @@ const otherSkills = [
   "Express",
   "Node",
   "Redux toolkit",
-  "Clerk Auth",
   "SASS",
-  "Firebase",
   "Next Auth",
   "zustand",
   "zod",
@@ -52,7 +54,7 @@ const otherSkills = [
 export const MySkills = () => {
   return (
     <>
-      <div className="px-3 md:px-10 pt-[100px] md:pt-[150px] flex flex-wrap items-center justify-center gap-3 mt-[50px]">
+      <div className="px-3 md:px-10 pt-[50px] md:pt-[100px] flex flex-wrap items-center justify-center gap-3 mt-[50px]">
         <span className="text-xl font-bold">My skills: </span>
         {skills.map((item) => (
           <div
