@@ -41,10 +41,31 @@ export const projectsListData: dataType[] = [
       "A real estate marketplace to explore and list a real estate property",
     imageSrc: "/images/nextjs/anonimo.png",
     githubLink: "https://github.com/nehalpradhan23/anonymous-messages-nextjs",
-    liveProjectLink: "https://anonimo-rust.vercel.app/",
     points: ["Full stack app with sign-in/sign-up, CRUD operations"],
-    stack: ["html", "css", "tailwind", "react", "next", "typescript", "shadcn"],
+    liveProjectLink: "https://anonimo-rust.vercel.app/",
+    stack: ["html", "css", "tailwind", "typescript", "react", "next", "shadcn"],
     otherStack: ["mongoose", "next-auth", "react hook form", "zod"],
+  },
+  {
+    title: "Jobkart - job portal app",
+    description:
+      "Job portal app where you can post jobs or find one. Join as recruiter or candidate.",
+    imageSrc: "/images/react/jobkart.png",
+    liveProjectLink: "https://jobkart-job-portal-react-js.vercel.app/",
+    githubLink: "https://github.com/nehalpradhan23/jobkart-job-portal-react-js",
+    points: [
+      "Full stack app with sign-in/sign-up, CRUD operations",
+      "Protected routes for authorized access",
+    ],
+    stack: ["html", "css", "tailwind", "javascript", "react", "shadcn"],
+    otherStack: [
+      "vite",
+      "clerk",
+      "react hook form",
+      "zod",
+      "react router dom",
+      "supabase",
+    ],
   },
 
   // {
@@ -62,7 +83,7 @@ export const projectsListData: dataType[] = [
   //   stack: ["html", "css", "tailwind", "typescript", "next", "shadcn"],
   // },
   {
-    title: "MyEstate Real Estate Marketplace",
+    title: "MyEstate - Real Estate Marketplace",
     description:
       "A real estate marketplace to explore and list a real estate property",
     imageSrc: "/images/react/my-estate.png",

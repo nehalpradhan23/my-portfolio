@@ -9,7 +9,7 @@ const HeroSectionLinks = () => {
       <Link
         href={"https://github.com/nehalpradhan23"}
         target="_blank"
-        className="flex gap-2 items-center px-5 py-2 bg-slate-800 dark:bg-gray-100/80 text-white dark:text-black rounded-md hover:scale-105"
+        className="flex gap-2 items-center px-5 py-2 bg-slate-900 dark:bg-gray-100/80 text-white dark:text-black rounded-md hover:scale-105"
       >
         <Image
           src={"/github.png"}
@@ -23,7 +23,7 @@ const HeroSectionLinks = () => {
       <Link
         href={"https://www.linkedin.com/in/nehalpradhan22"}
         target="_blank"
-        className="flex gap-2 items-center px-5 py-2 bg-blue-800 text-white rounded-md hover:scale-105"
+        className="flex gap-2 items-center px-5 py-2 bg-blue-700 text-white rounded-md hover:scale-105"
       >
         <Image
           src={"/linkedin.png"}

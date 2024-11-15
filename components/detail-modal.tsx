@@ -53,9 +53,9 @@ const DetailsModal = () => {
         <ul className="flex flex-wrap">
           {otherStack &&
             otherStack.map((item) => (
-              <div className="flex" key={item}>
+              <div className="flex items-center" key={item}>
                 <Dot />
-                <li>{item}</li>
+                <li>{item}</li>{" "}
               </div>
             ))}
         </ul>
