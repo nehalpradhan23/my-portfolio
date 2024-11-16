@@ -25,7 +25,7 @@ const AllProjects = () => {
             //   key={item.title}
             // >
             <div
-              className="bg-gradient-to-b from-white dark:from-gray-600 to-black/70 p-3 rounded-md flex flex-col border-black border-[1px] gap-4 hover:shadow hover:shadow-black dark:hover:shadow-white max-sm:w-full"
+              className="bg-gradient-to-b from-white to-black/70 dark:from-slate-900 dark:to-gray-600 p-3 rounded-md flex flex-col border-black border-[1px] gap-4 hover:shadow hover:shadow-black dark:hover:shadow-white max-sm:w-full"
               key={item.title}
             >
               {/* title and link ====================================== */}
@@ -69,7 +69,7 @@ const AllProjects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 px-3">
           {reactNativeProjects.map((item) => (
             <div
-              className="bg-gradient-to-b from-white dark:from-gray-600 to-black/70 p-3 rounded-md flex flex-col border-black border-[1px] gap-4 hover:shadow hover:shadow-black dark:hover:shadow-white max-sm:w-full"
+              className="bg-gradient-to-b from-white to-black/70 dark:from-slate-900 dark:to-gray-600 p-3 rounded-md flex flex-col border-black border-[1px] gap-4 hover:shadow hover:shadow-black dark:hover:shadow-white max-sm:w-full"
               key={item.title}
             >
               {/* <div

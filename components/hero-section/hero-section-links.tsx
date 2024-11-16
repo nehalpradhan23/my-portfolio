@@ -35,7 +35,10 @@ const HeroSectionLinks = () => {
         <span>Linkedin</span>
       </Link>
       <Link
-        href={"/"}
+        target="_blank"
+        href={
+          "https://drive.google.com/file/d/18l4a97FBUEMFw7X8bnpeT1jOApum1tLF/view?usp=sharing"
+        }
         className="flex gap-2 bg-gradient-to-r from-indigo-600 to-purple-700 rounded-md items-center px-5 py-2 hover:scale-105 transition-all text-white"
       >
         <MenuSquare />

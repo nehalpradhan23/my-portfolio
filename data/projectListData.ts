@@ -41,7 +41,12 @@ export const projectsListData: dataType[] = [
       "A real estate marketplace to explore and list a real estate property",
     imageSrc: "/images/nextjs/anonimo.png",
     githubLink: "https://github.com/nehalpradhan23/anonymous-messages-nextjs",
-    points: ["Full stack app with sign-in/sign-up, CRUD operations"],
+    points: [
+      "Full stack app with sign-in/sign-up, CRUD operations",
+      "anonymous messaging app allowing users to create accounts and receive anonymous messages via a shared link",
+      "Implemented a toggle feature for users to enable or disable the acceptance of anonymous messages",
+      "Real-time messaging functionality to ensure instant delivery and receipt of anonymous messages.",
+    ],
     liveProjectLink: "https://anonimo-rust.vercel.app/",
     stack: ["html", "css", "tailwind", "typescript", "react", "next", "shadcn"],
     otherStack: ["mongoose", "next-auth", "react hook form", "zod"],
@@ -56,6 +61,7 @@ export const projectsListData: dataType[] = [
     points: [
       "Full stack app with sign-in/sign-up, CRUD operations",
       "Protected routes for authorized access",
+      "Incorporated job application tracking features, enabling candidates to monitor the status of their applications and recruiters to manage their hiring pipeline.",
     ],
     stack: ["html", "css", "tailwind", "javascript", "react", "shadcn"],
     otherStack: [
