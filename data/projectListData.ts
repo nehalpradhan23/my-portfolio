@@ -250,3 +250,43 @@ export const otherProjectsListData = [
     otherStack: ["mongoose", "express"],
   },
 ];
+
+export const reactNativeProjects: dataType[] = [
+  {
+    title: "News app",
+    description: "",
+    imageSrc: "",
+    githubLink: "https://github.com/nehalpradhan23/news-app-react-native",
+    liveProjectLink: "",
+    points: [""],
+    stack: ["react-native", "react-native-expo", "css", "typescript"],
+    otherStack: [""],
+  },
+  {
+    title: "Uber clone",
+    description: "",
+    imageSrc: "",
+    githubLink: "https://github.com/nehalpradhan23/uber-clone-react-native",
+    liveProjectLink: "",
+    points: [""],
+    stack: [
+      "react-native",
+      "react-native-expo",
+      "css",
+      "tailwind",
+      "typescript",
+    ],
+    otherStack: [""],
+  },
+  {
+    title: "Social media App",
+    description: "",
+    imageSrc: "",
+    githubLink:
+      "https://github.com/nehalpradhan23/social-media-app-react-native",
+    liveProjectLink: "",
+    points: [""],
+    stack: ["react-native", "react-native-expo", "css", "javascript"],
+    otherStack: [""],
+  },
+];
