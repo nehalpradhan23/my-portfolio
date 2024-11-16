@@ -1,11 +1,11 @@
 export type dataType = {
   title: string;
-  description?: string;
-  imageSrc?: string;
+  description: string;
+  imageSrc: string;
   githubLink: string;
-  liveProjectLink?: string;
+  liveProjectLink: string;
   stack: string[];
-  otherStack?: string[];
+  otherStack: string[];
   points: string[];
 };
 
