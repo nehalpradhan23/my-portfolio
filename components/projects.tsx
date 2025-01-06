@@ -5,13 +5,14 @@ import { projectsListData } from "@/data/projectListData";
 export const Projects = () => {
   return (
     <div className="pt-[100px] pb-[20px] flex flex-col max-w-[1500px] mx-auto mt-[50px]">
-      <span className="text-center mb-[50px] text-5xl md:text-6xl font-semibold">
+      <span className="text-center mb-[70px] text-5xl md:text-6xl font-bold">
         MY PROJECTS
       </span>
 
       <div className="flex flex-col mx-auto">
         {/* cards ====================== */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] justify-center">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-[50px] md:gap-[100px] justify-center">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] justify-center"> */}
           {projectsListData.map((item) => (
             <Card cardItem={item} key={item.title} />
           ))}

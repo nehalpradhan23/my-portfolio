@@ -10,8 +10,9 @@ import React from "react";
 
 const AllProjects = () => {
   return (
-    <div className="pt-[100px] pb-[20px] flex flex-col max-w-[1500px] mx-auto bg-[url(/circuit-board.svg)] dark:bg-[url(/circuit-board-dark.svg)]">
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] justify-center px-4 mx-auto">
+    <div className="pt-[100px] pb-[20px] flex flex-col max-w-[1500px] mx-auto items-center">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-[50px] md:gap-[100px] justify-center">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[50px] justify-center px-4 mx-auto"> */}
         {projectsListData.map((item) => (
           <Card cardItem={item} key={item.title} />
         ))}

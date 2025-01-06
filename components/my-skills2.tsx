@@ -49,18 +49,17 @@ const otherSkills = [
   "Next Auth",
   "zustand",
   "zod",
-  "REST APIs",
 ];
 
-export const MySkills = () => {
+export const MySkills2 = () => {
   return (
-    <>
-      <div className="px-3 md:px-10 pt-[50px] md:pt-[100px] flex flex-wrap items-center justify-center gap-5 mt-[50px]">
-        <span className="text-xl font-bold">My skills: </span>
+    <div className="flex justify-center mt-20">
+      <div className="flex items-center gap-5 flex-wrap bg-slate-950 w-[600px] p-10 rounded-xl shadow-lg shadow-white/20">
+        <span className="text-xl font-bold">My skills:</span>
         {skills.map((item) => (
           <div
             key={item.title}
-            className="pointer-events-none px-2 flex items-center bg-gray-400/70 dark:bg-slate-950 rounded-full shadow-md shadow-black/70 dark:shadow-white/40"
+            className="pointer-events-none flex items-center border bg-gray-300 dark:bg-blue-950 rounded-full shadow-md dark:shadow-white/10 h-fit"
           >
             <div className="flex items-center gap-2 px-3 py-2">
               <span>
@@ -80,15 +79,16 @@ export const MySkills = () => {
           </div>
         ))}
       </div>
-
-      <ul className="flex font-bold gap-2 px-3 md:px-10 pt-[50px] flex-wrap items-center justify-center">
-        {otherSkills.map((item) => (
-          <li className="flex" key={item}>
-            <Dot />
-            {item}
-          </li>
-        ))}
-      </ul>
-    </>
+      <div className="">
+        <ul className="flex font-bold gap-2 px-3 md:px-10 pt-[50px] flex-wrap items-center justify-center">
+          {otherSkills.map((item) => (
+            <li className="flex" key={item}>
+              <Dot />
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
   );
 };

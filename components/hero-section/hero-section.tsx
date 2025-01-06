@@ -9,7 +9,7 @@ export const HeroSection = () => {
       <div className="flex flex-col max-2xl:mb-[60px] md:w-[60vw]">
         <div className="text-4xl font-bold">I&apos;m a</div>
         <br />
-        <div className="mb-[30px] md:mb-[40px] heroText text-[60px] md:text-[80px] font-bold leading-[1]">
+        <div className="mb-[30px] md:mb-[40px] heroText text-[40px] md:text-[60px] font-bold leading-[1]">
           Frontend Developer
         </div>
         <div className="xl:w-fit text-md md:text-lg flex flex-col gap-4">
@@ -34,21 +34,25 @@ export const HeroSection = () => {
         </div>
         <HeroSectionLinks />
       </div>
+
       {/* image, links and info section ====================== */}
-      <div className="flex flex-col max-md:flex-col max-2xl:flex-row max-2xl:gap-10 2xl:-mt-10 max-sm:items-center max-sm:justify-center p-4 items-center border shadow-sm shadow-white rounded-2xl bg-gray-200 border-slate-600 dark:bg-transparent">
-        <div className="rounded-full">
-          <Image
-            src={"/myImage.JPG"}
-            alt="myImage"
-            height={400}
-            width={400}
-            className="rounded-full object-cover h-[14em] w-[14em] max-sm:h-[200px] max-sm:w-[200px]"
-          />
-        </div>
-        {/* links ====================== */}
-        <div className="flex flex-col gap-3 items-center mt-6">
-          <span className="text-3xl">Nehal pradhan</span>
-          <HeroSectionPersonalDetails />
+      <div className="bg-red-600 p-[3px] rounded-2xl bg-gradient-to-br from-red-600 to-yellow-400 dark:from-blue-900 dark:to-sky-300 shadow-2xl shadow-black dark:shadow-sky-600/40">
+        <div className="flex flex-col max-md:flex-col max-2xl:flex-row max-2xl:gap-10 max-sm:items-center max-sm:justify-center p-4 items-center rounded-2xl bg-gray-300 border-slate-600 dark:bg-slate-950">
+          {/* <div className="flex flex-col max-md:flex-col max-2xl:flex-row max-2xl:gap-10 2xl:-mt-10 max-sm:items-center max-sm:justify-center p-4 items-center border shadow-sm shadow-white rounded-2xl bg-gray-200 border-slate-600 dark:bg-transparent"> */}
+          <div className="rounded-full">
+            <Image
+              src={"/myImage.JPG"}
+              alt="myImage"
+              height={400}
+              width={400}
+              className="rounded-full object-cover h-[14em] w-[14em] max-sm:h-[200px] max-sm:w-[200px]"
+            />
+          </div>
+          {/* links ====================== */}
+          <div className="flex flex-col gap-3 items-center mt-6">
+            <span className="text-3xl">Nehal pradhan</span>
+            <HeroSectionPersonalDetails />
+          </div>
         </div>
       </div>
     </div>

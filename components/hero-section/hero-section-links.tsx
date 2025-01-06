@@ -5,7 +5,7 @@ import { MenuSquare } from "lucide-react";
 
 const HeroSectionLinks = () => {
   return (
-    <div className="flex flex-wrap justify-center md:justify-items-start gap-5 text-sm md:text-lg mt-[50px]">
+    <div className="flex flex-wrap justify-center md:justify-items-start gap-5 text-sm md:text-lg mt-[50px] transition-all">
       <Link
         href={"https://github.com/nehalpradhan23"}
         target="_blank"
@@ -37,7 +37,7 @@ const HeroSectionLinks = () => {
       <Link
         target="_blank"
         href={
-          "https://drive.google.com/file/d/18l4a97FBUEMFw7X8bnpeT1jOApum1tLF/view?usp=sharing"
+          "https://drive.google.com/file/d/1rEZgWOfzR0brgGBM7Qen8KJVhC18Q1VH/view?usp=sharing"
         }
         className="flex gap-2 bg-gradient-to-r from-indigo-600 to-purple-700 rounded-md items-center px-5 py-2 hover:scale-105 transition-all text-white"
       >
