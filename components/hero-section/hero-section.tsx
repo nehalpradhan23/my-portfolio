@@ -7,15 +7,9 @@ export const HeroSection = () => {
   return (
     <div className="flex flex-col gap-5 justify-between mt-[5rem] 2xl:flex-row max-2xl:items-center max-w-[1500px] mx-auto w-full px-5 md:px-[5vw]">
       <div className="flex flex-col max-2xl:mb-[60px] md:w-[60vw]">
-        {/* <div className="text-4xl font-bold">I&apos;m a</div>
-        <br />
-        <div className="mb-[30px] md:mb-[40px] heroText text-[40px] md:text-[60px] font-bold leading-[1]">
-          Frontend Developer
-        </div> */}
         {/* logo ----------------------------------------- */}
         <div className="flex my-10 md:my-20 gap-10">
           <div className="flex items-center justify-center md:h-[200px] md:w-[650px]">
-            {/* <div className="flex items-center justify-center border-[1px] border-green-500 shadow-2xl shadow-green-500 rounded-full h-[240px] w-[640px]"> */}
             <Image
               // className="bg-gray-100"
               alt="mongoDB"
@@ -24,40 +18,6 @@ export const HeroSection = () => {
               width={1000}
             />
           </div>
-          {/* <div className="flex items-center justify-center border-[1px] border-green-500 shadow-2xl shadow-green-500 rounded-full h-[140px] w-[140px] bg-gray-50">
-            <Image
-              // className="bg-gray-100"
-              alt="mongoDB"
-              src={"/images/forHero/mongoDB3.png"}
-              height={100}
-              width={100}
-            />
-          </div>
-          <div className="flex items-center justify-center shadow-2xl shadow-gray-500 rounded-full h-[140px] w-[140px] bg-gray-800">
-            <Image
-              className="w-full"
-              alt="express"
-              src={"/images/forHero/express2.png"}
-              height={100}
-              width={100}
-            />
-          </div>
-          <div className="flex items-center justify-center border-blue-500 shadow-2xl shadow-sky-500 rounded-full h-[140px] w-[140px] bg-slate-950">
-            <Image
-              alt="react"
-              src={"/images/forHero/react2.png"}
-              height={100}
-              width={100}
-            />
-          </div>
-          <div className="flex items-center justify-center border-[1px] border-green-500 shadow-2xl shadow-teal-500 rounded-full h-[140px] w-[140px] bg-gray-50">
-            <Image
-              alt="node"
-              src={"/images/forHero/node.png"}
-              height={100}
-              width={100}
-            />
-          </div> */}
         </div>
         <div className="xl:w-fit text-md md:text-lg flex flex-col gap-4">
           <span className="">
@@ -85,7 +45,6 @@ export const HeroSection = () => {
       {/* image, links and info section ====================== */}
       <div className="bg-red-600 p-[3px] rounded-2xl bg-gradient-to-br from-red-600 to-yellow-400 dark:from-blue-900 dark:to-sky-300 shadow-2xl shadow-black dark:shadow-sky-600/40">
         <div className="flex flex-col h-full max-md:flex-col max-2xl:flex-row max-2xl:gap-10 max-sm:items-center max-sm:justify-center p-4 items-center rounded-2xl bg-gray-300 border-slate-600 dark:bg-slate-950">
-          {/* <div className="flex flex-col max-md:flex-col max-2xl:flex-row max-2xl:gap-10 2xl:-mt-10 max-sm:items-center max-sm:justify-center p-4 items-center border shadow-sm shadow-white rounded-2xl bg-gray-200 border-slate-600 dark:bg-transparent"> */}
           <div className="rounded-full">
             <Image
               src={"/myImage.JPG"}

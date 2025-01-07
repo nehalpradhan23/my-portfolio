@@ -22,7 +22,7 @@ const HeroSectionPersonalDetails = () => {
             width={50}
             className="h-6 w-6"
           />
-          <span>nehal.pradhan23@gmail.com</span>
+          <span className="text-sm">nehal.pradhan23@gmail.com</span>
         </div>
       </Hint>
       <div className="flex gap-2">
