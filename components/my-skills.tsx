@@ -31,19 +31,17 @@ const skills = [
     title: "Typescript",
   },
   {
-    icon: "/skills/shadcn.png",
-    title: "Shadcn UI",
+    icon: "/skills/mongoDB.png",
+    title: "MongoDB",
   },
   {
-    icon: "/skills/react-native.png",
-    title: "React Native",
+    icon: "/skills/node.png",
+    title: "Node.js",
   },
 ];
 
 const otherSkills = [
-  "MongoDb",
   "Express",
-  "Node",
   "Redux toolkit",
   "SASS",
   "Next Auth",
@@ -60,7 +58,7 @@ export const MySkills = () => {
         {skills.map((item) => (
           <div
             key={item.title}
-            className="pointer-events-none px-2 flex items-center bg-gray-400/70 dark:bg-slate-950 rounded-full shadow-md shadow-black/70 dark:shadow-white/40"
+            className="pointer-events-none px-2 flex items-center bg-white dark:bg-slate-950 rounded-full shadow-md shadow-black/70 dark:shadow-white/40"
           >
             <div className="flex items-center gap-2 px-3 py-2">
               <span>

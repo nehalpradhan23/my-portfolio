@@ -9,7 +9,7 @@ const HeroSectionPersonalDetails = () => {
     navigator.clipboard.writeText("nehal.pradhan23@gmail.com");
   };
   return (
-    <div className="flex flex-col justify-items-start gap-5 text-base mt-3">
+    <div className="flex flex-col px-2 justify-items-start gap-5 text-base mt-3">
       <Hint label="Copy email" side="right">
         <div
           className="flex gap-2 hover:underline items-center cursor-pointer  hover:scale-105"
