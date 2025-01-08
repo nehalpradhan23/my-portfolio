@@ -44,8 +44,7 @@ export const projectsListData: dataType[] = [
   },
   {
     title: "Anonimo - anonymous message app",
-    description:
-      "A real estate marketplace to explore and list a real estate property",
+    description: "A web app to receive anonymous messages from users.",
     imageSrc: "/images/nextjs/anonimo.png",
     githubLink: "https://github.com/nehalpradhan23/anonymous-messages-nextjs",
     points: [
